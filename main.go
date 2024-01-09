@@ -31,18 +31,19 @@ func main() {
 
 	// setup inertia
 	r := inertia.NewRenderer()
+	// r.Debug = true
 	r.MustParseGlob(filepath.Join(optDir, "views/*.html"))
 	r.ViteBasePath = "/dist/"
 	r.AddViteEntryPoint("js/app.tsx")
 	r.MustParseViteManifestFile(filepath.Join(optDir, "public/dist/manifest.json"))
 
 	e.Use(inertia.Middleware(r))
-	// e.Use(inertia.CSRF())
+	e.Use(inertia.CSRF())
 
 	e.Static("/", filepath.Join(optDir, "public"))
 
 	e.Get("/", func(c *fiber.Ctx) error {
-		c.Locals("Inertia", "Inertia")
+
 		return inertia.Render(c, http.StatusOK, "Index", map[string]interface{}{
 			"title":   "Hello, World! powered by inertia-fiber",
 			"message": "Hello, World!",

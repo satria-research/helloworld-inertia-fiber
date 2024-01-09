@@ -1,0 +1,34 @@
+{
+  "name": "helloworld-inertia-fiber",
+  "version": "1.0.0",
+  "description": "simple example helloworld go fiber inertia",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satria-research/helloworld-inertia-fiber.git"
+  },
+  "author": "Ubaidillah Hakim Fadly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satria-research/helloworld-inertia-fiber/issues"
+  },
+  "homepage": "https://github.com/satria-research/helloworld-inertia-fiber#readme",
+  "scripts": {
+    "dev": "vite --clearScreen=false",
+    "build": "tsc --noEmit && vite build",
+    "clean": "rm -rf public/dist"
+  },
+  "dependencies": {
+    "@inertiajs/react": "^1.0.14",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  }
+}

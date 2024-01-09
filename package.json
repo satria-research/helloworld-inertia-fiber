@@ -3,16 +3,8 @@
   "version": "1.0.0",
   "description": "simple example helloworld go fiber inertia",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/satria-research/helloworld-inertia-fiber.git"
-  },
   "author": "Ubaidillah Hakim Fadly",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/satria-research/helloworld-inertia-fiber/issues"
-  },
-  "homepage": "https://github.com/satria-research/helloworld-inertia-fiber#readme",
   "scripts": {
     "dev": "vite --clearScreen=false",
     "build": "tsc --noEmit && vite build",
